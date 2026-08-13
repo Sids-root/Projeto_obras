@@ -1,0 +1,149 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+/* Camada escura sobre a imagem */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Conteúdo */
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+  color: white;
+
+  max-width: 1000px;
+  padding: 20px;
+}
+
+/* Texto pequeno acima do título */
+.hero-subtitle {
+  display: inline-block;
+
+  color: #d4af5a;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  margin-bottom: 30px;
+
+  position: relative;
+}
+
+/* Linha acima do subtítulo */
+.hero-subtitle::before {
+  content: "";
+
+  display: block;
+
+  width: 330px;
+  height: 2px;
+
+  background: #d4af5a;
+
+  margin: 0 auto 10px;
+}
+
+/* Título */
+.hero-content h1 {
+  font-family: Georgia, serif;
+
+  font-size: 56px;
+  line-height: 1.1;
+
+  margin: 0 0 25px;
+}
+
+/* Parte dourada do título */
+.hero-content h1 span {
+  color: #d4af5a;
+}
+
+/* Descrição */
+.hero-content p {
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  margin-bottom: 45px;
+
+  color: #eeeeee;
+}
+
+/* Área dos botões */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* Botão principal */
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 58px;
+
+  background: #d4af5a;
+  color: #111;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e2c477;
+}
+
+/* Botão secundário */
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 245px;
+  height: 58px;
+
+  border: 2px solid #d4af5a;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #d4af5a;
+  color: #111;
+}
