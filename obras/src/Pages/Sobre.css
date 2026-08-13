@@ -1,0 +1,123 @@
+:root {
+    --cor-texto: #1a2b4a;
+    --cor-texto-corpo: #2f3f5c;
+    --cor-dourado: #c9a04e;
+    --cor-fundo-card: #efe9dc;
+    --cor-branco: #ffffff;
+  }
+ 
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--cor-branco);
+    color: var(--cor-texto-corpo);
+  }
+ 
+  .quem-somos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+ 
+  /* Coluna da imagem */
+  .quem-somos__imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+ 
+  .quem-somos__imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+ 
+  /* Coluna de texto */
+  .quem-somos__conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .quem-somos__eyebrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--cor-dourado);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+ 
+  .quem-somos__titulo {
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--cor-texto);
+    margin-bottom: 24px;
+  }
+ 
+  .quem-somos__titulo span {
+    color: var(--cor-dourado);
+  }
+ 
+  .quem-somos__texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--cor-texto-corpo);
+    margin-bottom: 20px;
+  }
+ 
+  /* Grid de estatísticas */
+  .quem-somos__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+ 
+  .stat-card {
+    background: var(--cor-fundo-card);
+    border-radius: 4px;
+    padding: 28px 16px;
+    text-align: center;
+  }
+ 
+  .stat-card__numero {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cor-dourado);
+    margin-bottom: 8px;
+  }
+ 
+  .stat-card__label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--cor-texto);
+    text-transform: uppercase;
+  }
+ 
+  /* Responsivo */
+  @media (max-width: 860px) {
+    .quem-somos {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .quem-somos__titulo { font-size: 30px; }
+  }
+ 
+  @media (max-width: 480px) {
+    .quem-somos__stats { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stat-card { padding: 20px 10px; }
+    .stat-card__numero { font-size: 26px; }
+  }

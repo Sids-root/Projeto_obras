@@ -1,12 +1,11 @@
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 
-export default function Produtos(){
+export default function Servicos(){
     return(
         <>
             <Header/>
-            <h1>Pagina Produtos</h1>
-            <h2>Produtos a vendas </h2>
+            <h1>Nossos Serviços</h1>
             
         </>
     )
