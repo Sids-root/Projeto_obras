@@ -1,7 +1,8 @@
 .produtos {
     width: 100%;
-    padding: 70px 0 40px;
+    padding: auto 0 40px;
     background-color: #fff;
+    margin-bottom: 50px;
 }
 
 .produtos h2 {
@@ -10,15 +11,16 @@
 
 /* Título principal */
 .produtos-section-title {
+    
     text-align: center;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 42px;
     font-weight: 700;
-    margin: 0 0 80px;
+    margin: 50px 0 50px 0;
     color: #071b2d;
 }
 
-.produtos-section-title h2 {
+.produtos-section-title {
     color: #d1ae62;
 }
 
