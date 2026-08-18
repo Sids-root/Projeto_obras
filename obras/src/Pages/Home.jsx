@@ -6,7 +6,7 @@ import Footer from "../Components/Footer/Footer";
 export default function Home() {
   return (
     <>
-    <Header/>
+    
     <section className="hero">
 
       <div className="hero-overlay"></div>
@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
     </section>
-    <Footer/>
+    
     </>
   );
 }
