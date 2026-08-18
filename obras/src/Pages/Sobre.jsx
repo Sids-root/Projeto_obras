@@ -1,11 +1,9 @@
 import "./Sobre.css"
-import Footer from "../Components/Footer/Footer";
-import Header from "../Components/Header/Header";
 
 export default function Sobre(){
     return(
         <>
-            <Header/>
+            
             
             <section class="quem-somos">
 
@@ -54,7 +52,7 @@ export default function Sobre(){
                 </div>
                 
             </section>
-            <Footer/>
+            
             
         </>
     )
